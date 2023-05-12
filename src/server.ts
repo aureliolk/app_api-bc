@@ -7,7 +7,10 @@ import axios from 'axios';
 const app = fastify()
 
 app.get("/", async (req, res)=>{
-    res.status(200).send("Welcome Api BC")
+    res.status(200).send(`
+    "Welcome Api BC"
+    By: Acos and Samuel
+    `)
 })
 
 app.get("/:cpf/:date/:token", async (request, reply)=>{
