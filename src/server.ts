@@ -6,6 +6,10 @@ import axios from 'axios';
 
 const app = fastify()
 
+app.get("/", async (req, res)=>{
+    res.status(200).send("Welcome Api BC")
+})
+
 app.get("/:cpf/:date/:token", async (request, reply)=>{
     const {cpf,date, token} = request.params as any
     
