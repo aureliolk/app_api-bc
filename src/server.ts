@@ -8,8 +8,8 @@ const app = fastify()
 
 app.get("/", async (req, res)=>{
     res.status(200).send(`
-    "Welcome Api BC"
-    By: Acos and Samuel
+    "Welcome Api BC
+    By: Acos and Samuel"
     `)
 })
 
